@@ -17,9 +17,9 @@
     --gold-light: #e6efcd;
     --text: #1e1e1e;
     --text-muted: #908e8b;
-    --text-light: #ffffff;
+    --text-light: #dfdedc;
     --border: #dfdedc;
-    --bg: #ffffff;
+    --bg: #f2f3f2;
     --white: #ffffff;
     --shadow: 0 2px 16px rgba(0,0,0,0.07);
     --shadow-lg: 0 8px 40px rgba(0,0,0,0.10);
@@ -33,45 +33,6 @@
     color: var(--text);
     min-height: 100vh;
     line-height: 1.6;
-  }
-
-  /* ─── HEADER ─────────────────────────────────────────── */
-  .header {
-    background: var(--green-dark);
-    color: #fffff;
-    padding: 2.5rem 1.5rem 2rem;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-  .header::before {
-    content: 'Test';
-    position: absolute;
-    inset: 0;
-    background: var(--green-dark);
-    pointer-events: none;
-  }
-  .header-eyebrow {
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--green-mid);
-    margin-bottom: 10px;
-  }
-  .header h1 {
-    font-family: 'Fraunces', serif;
-    font-size: clamp(1.6rem, 4vw, 2.6rem);
-    font-weight: 600;
-    color: #fff;
-    line-height: 1.2;
-    margin-bottom: 10px;
-  }
-  .header p {
-    font-size: 15px;
-    color: rgba(255,255,255,0.65);
-    max-width: 520px;
-    margin: 0 auto;
   }
 
   /* ─── LAYOUT ─────────────────────────────────────────── */
@@ -92,7 +53,7 @@
     cursor: pointer;
     text-align: center;
     transition: all 0.2s;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
   }
   .tab-btn:hover { border-color: var(--green); background: var(--green-light); }
   .tab-btn.active {
@@ -403,7 +364,7 @@
           <div class="slider-group">
             <div class="slider-row-top">
               <span class="slider-label">Current annual salary</span>
-              <span class="slider-val" id="c-salary-out">$85,000</span>
+              <span class="slider-val" id="c-salary-out">$50,000</span>
             </div>
             <input type="range" id="c-salary" min="50000" max="175000" step="5000" value="85000" oninput="calcCoaching()">
           </div>
