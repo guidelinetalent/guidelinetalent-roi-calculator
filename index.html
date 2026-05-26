@@ -15,8 +15,8 @@
     --green-dark: #213526;
     --gold: #e6efcd;
     --gold-light: #e6efcd;
-    --text: #1c1c1c;
-    --text-muted: #dfdedc;
+    --text: #1e1e1e;
+    --text-muted: #908e8b;
     --text-light: #ffffff;
     --border: #dfdedc;
     --bg: #ffffff;
@@ -48,19 +48,19 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at 70% 50%, rgba(47,168,127,0.18) 0%, transparent 70%);
+    background: var(--green-dark);
     pointer-events: none;
   }
   .header-eyebrow {
-    font-size: 11px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 600;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--green-mid);
     margin-bottom: 10px;
   }
   .header h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Fraunces', serif;
     font-size: clamp(1.6rem, 4vw, 2.6rem);
     font-weight: 600;
     color: #fff;
@@ -125,7 +125,7 @@
     background: var(--green-light);
   }
   .panel-header h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Fraunces', serif;
     font-size: 1.3rem;
     font-weight: 600;
     color: var(--green-dark);
@@ -209,7 +209,7 @@
   }
   .roi-hero-left .roi-label { font-size: 12px; color: rgba(255,255,255,0.6); margin-bottom: 4px; }
   .roi-hero-left .roi-val {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Fraunces', serif;
     font-size: clamp(2rem, 6vw, 3rem);
     font-weight: 600;
     color: #fff;
@@ -224,7 +224,7 @@
     text-align: center;
     flex-shrink: 0;
   }
-  .roi-badge .mult { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; display: block; line-height: 1; }
+  .roi-badge .mult { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 600; display: block; line-height: 1; }
   .roi-badge .mult-label { font-size: 11px; opacity: 0.9; display: block; margin-top: 3px; }
 
   .metrics-grid {
@@ -264,7 +264,7 @@
   .sources-toggle-btn {
     background: none;
     border: none;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 13px;
     color: var(--green);
     cursor: pointer;
@@ -307,7 +307,7 @@
     border: none;
     border-radius: 8px;
     padding: 12px 22px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
@@ -324,7 +324,7 @@
     border: 1.5px solid var(--green);
     border-radius: 8px;
     padding: 11px 20px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
